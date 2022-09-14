@@ -1,0 +1,133 @@
+:root{
+    --colorPrincipal: #FB991C;
+    --colorSecundario: #022539;
+    --blanco: #fff;
+    --negro: #000;
+
+    --fuentePrincipal: 'Lato', sans-serif;
+}
+
+html{
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: var(--fuentePrincipal);
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 90%;
+    width: 90rem;
+    box-shadow: 0px 0px 45px 0px rgba(251,153,28,1);
+    
+}
+
+.logo, .fecha{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__img{
+    margin: .5rem 0;
+    width: 20rem;
+}
+
+#date{
+    color: var(--colorPrincipal);
+    font-size: 1.6rem;
+    padding: .5rem 0;
+    margin: 0 0 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+    .contenedor__info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.map__container, .my_camera--container{
+    overflow: hidden;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    transform: translateZ(0px);
+    border: 1px solid var(--colorPrincipal);
+    margin-bottom: 1rem;
+}
+
+.my_camera--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoMapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.inputUsuario, .inputRegistro{
+    margin-bottom: 3rem;
+}
+
+.codUsuario{
+    appearance: textfield;
+    margin: 0;
+}
+
+.selectRegistro{
+    background-color: var(--blanco);
+}
+
+.codUsuario::placeholder, .codUsuario,.selectRegistro{
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--colorSecundario);
+    padding: .8rem 0;
+    width: 85%;
+    border-radius: .5rem;
+    border: 1.2px solid var(--colorSecundario);
+}
+
+.btn__submit{
+    background-color: var(--colorPrincipal);
+    color: var(--blanco);
+    padding: 1.5rem 5rem;
+    font-size: 1.4rem;
+    border: 1.5px solid var(--colorPrincipal);
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color .5s ease;
+}
+
+.btn__submit:hover{
+    background-color: var(--blanco);
+    color: var(--colorPrincipal);
+}
+
+
+
+
+
+
+
